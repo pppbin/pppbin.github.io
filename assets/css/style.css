@@ -121,6 +121,32 @@ body {
   font-size: 1rem;
 }
 
+.about-statement {
+  max-width: 540px;
+  margin: 0 0 28px;
+  padding: 22px 24px;
+  background: var(--surface);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px 14px 14px 4px;
+}
+
+.about-statement-label {
+  margin: 0 0 10px;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.about-statement p {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.85;
+  color: #2a2c30;
+  font-style: italic;
+}
+
 .contact {
   list-style: none;
   padding: 0;
@@ -171,6 +197,16 @@ body {
 .contact .icon svg {
   width: 12px;
   height: 12px;
+}
+
+.entry .contact {
+  margin-top: 16px;
+  padding-left: 0;
+}
+
+.entry .contact li {
+  margin-bottom: 0;
+  padding-left: 0;
 }
 
 /* Sections */
