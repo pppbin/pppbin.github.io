@@ -1,24 +1,59 @@
 :root {
-  --bg: #F8F8F6;
-  --surface: #FFFFFF;
-  --ink: #17181A;
-  --muted: #6B6F76;
-  --line: #E7E6E2;
-  --accent: #1F6F5C;
-  --accent-soft: #E7F1EE;
+  --bg: #f8f8f6;
+  --surface: #ffffff;
+  --ink: #17181a;
+  --muted: #6b6f76;
+  --line: #e7e6e2;
+  --accent: #1f6f5c;
+  --accent-soft: #e7f1ee;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Noto Sans KR", sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Noto Sans KR",
+    sans-serif;
   color: var(--ink);
   background: var(--bg);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+}
+
+.page-nav {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  background: rgba(248, 248, 246, 0.94);
+  padding: 14px 0;
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--line);
+  z-index: 10;
+}
+
+.page-nav a {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.page-nav a:hover,
+.page-nav a:focus {
+  color: var(--accent);
 }
 
 .wrapper {
@@ -83,7 +118,9 @@ body {
   color: var(--ink);
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: border-color 0.15s ease, color 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease;
 }
 
 .contact a:hover {
@@ -156,7 +193,7 @@ body {
 .entry ul {
   margin: 10px 0 0;
   padding-left: 18px;
-  color: #3A3D42;
+  color: #3a3d42;
 }
 
 .entry ul li {
@@ -170,7 +207,7 @@ body {
 
 .entry p {
   margin: 10px 0 0;
-  color: #3A3D42;
+  color: #3a3d42;
 }
 
 /* Skills */
@@ -200,13 +237,23 @@ body {
 
 /* Print */
 @media print {
-  body { background: white; }
-  .wrapper { padding: 24px; }
-  .site-footer { display: none; }
+  body {
+    background: white;
+  }
+  .wrapper {
+    padding: 24px;
+  }
+  .site-footer {
+    display: none;
+  }
 }
 
 /* Mobile */
 @media (max-width: 600px) {
-  .wrapper { padding: 56px 18px 40px; }
-  .resume-header h1 { font-size: 2rem; }
+  .wrapper {
+    padding: 56px 18px 40px;
+  }
+  .resume-header h1 {
+    font-size: 2rem;
+  }
 }
