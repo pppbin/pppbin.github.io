@@ -31,16 +31,24 @@ body {
 }
 
 .page-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   display: flex;
   justify-content: center;
   gap: 18px;
-  background: rgba(248, 248, 246, 0.94);
-  padding: 14px 0;
-  margin-bottom: 24px;
+  background: rgba(248, 248, 246, 0.98);
+  backdrop-filter: blur(12px);
+  padding: 14px 24px;
   border-bottom: 1px solid var(--line);
-  z-index: 10;
+  z-index: 999;
+}
+
+.wrapper {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 128px 24px 60px;
 }
 
 .page-nav a {
