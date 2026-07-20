@@ -1,0 +1,18 @@
+title: 손현빈 T
+description: 프론트엔드 개발자 손현빈의 이력서 & 포트폴리오
+author: 손현빈
+email: sonhyeonbin@example.com
+github_username: sonhyeonbin
+
+# 마크다운 처리기
+markdown: kramdown
+
+# 사용할 플러그인
+plugins:
+  - jekyll-seo-tag
+
+# 빌드 시 제외할 파일들
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
